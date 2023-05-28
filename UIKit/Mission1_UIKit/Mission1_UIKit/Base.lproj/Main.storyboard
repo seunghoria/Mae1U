@@ -82,12 +82,54 @@
                                     <constraint firstItem="Ns8-8s-I3w" firstAttribute="leading" secondItem="hRf-JN-57U" secondAttribute="leading" id="lj9-WW-Gje"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XK-ij-xZu">
+                                <rect key="frame" x="61" y="235" width="271" height="463"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인인증 증명서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OX-FF-TvI">
+                                        <rect key="frame" x="17" y="254" width="176" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RT3-aQ-HrG">
+                                        <rect key="frame" x="0.0" y="350" width="271" height="117"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8G-30-mse">
+                                                <rect key="frame" x="37" y="35" width="197" height="47"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="본인인증 하기">
+                                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                                        <color key="backgroundColor" red="0.0" green="0.21176470588235294" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RT3-aQ-HrG" secondAttribute="trailing" id="1rh-HP-NCd"/>
+                                    <constraint firstItem="RT3-aQ-HrG" firstAttribute="top" secondItem="5XK-ij-xZu" secondAttribute="top" constant="350" id="7Gn-38-NyU"/>
+                                    <constraint firstItem="RT3-aQ-HrG" firstAttribute="leading" secondItem="5XK-ij-xZu" secondAttribute="leading" id="CJu-D6-1SL"/>
+                                    <constraint firstAttribute="bottom" secondItem="RT3-aQ-HrG" secondAttribute="bottom" constant="-4" id="bJu-Es-9ha"/>
+                                    <constraint firstItem="6OX-FF-TvI" firstAttribute="leading" secondItem="5XK-ij-xZu" secondAttribute="leading" constant="17" id="fhy-iH-9Gf"/>
+                                    <constraint firstItem="RT3-aQ-HrG" firstAttribute="top" secondItem="6OX-FF-TvI" secondAttribute="bottom" constant="62" id="kOd-Su-h1f"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vIB-U8-ojE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5XK-ij-xZu" firstAttribute="centerX" secondItem="IXb-SO-eaO" secondAttribute="centerX" id="LOH-c3-889"/>
+                            <constraint firstItem="5XK-ij-xZu" firstAttribute="leading" secondItem="vIB-U8-ojE" secondAttribute="leading" constant="61" id="LlP-B0-caZ"/>
                             <constraint firstItem="IXb-SO-eaO" firstAttribute="leading" secondItem="JOY-7h-ZG6" secondAttribute="leading" id="g55-bb-cHz"/>
                             <constraint firstItem="IXb-SO-eaO" firstAttribute="top" secondItem="JOY-7h-ZG6" secondAttribute="top" id="hEE-Y5-xgE"/>
+                            <constraint firstItem="5XK-ij-xZu" firstAttribute="top" secondItem="IXb-SO-eaO" secondAttribute="bottom" constant="71" id="nla-rj-D3l"/>
+                            <constraint firstItem="vIB-U8-ojE" firstAttribute="bottom" secondItem="5XK-ij-xZu" secondAttribute="bottom" constant="71" id="pdT-zq-Ibp"/>
                             <constraint firstItem="vIB-U8-ojE" firstAttribute="bottom" secondItem="IXb-SO-eaO" secondAttribute="bottom" constant="605" id="t5o-1D-dSJ"/>
                             <constraint firstAttribute="trailing" secondItem="IXb-SO-eaO" secondAttribute="trailing" id="vTy-8X-mLC"/>
                         </constraints>
