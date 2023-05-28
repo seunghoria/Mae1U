@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mMY-wO-m6q">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -48,14 +49,54 @@
                     <view key="view" contentMode="scaleToFill" id="JOY-7h-ZG6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXb-SO-eaO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="164"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인인증수단이 추가되었습니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRf-JN-57U">
+                                        <rect key="frame" x="32" y="76" width="203" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ns8-8s-I3w">
+                                        <rect key="frame" x="32" y="109" width="75" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="1RK-fo-6vg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="yHI-Wv-o21"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="  ">
+                                            <backgroundConfiguration key="background" cornerRadius="13.5" strokeWidth="1">
+                                                <color key="strokeColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ns8-8s-I3w" secondAttribute="bottom" constant="29" id="A5Z-4x-BBP"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hRf-JN-57U" secondAttribute="trailing" constant="20" symbolic="YES" id="OhH-Gh-JHs"/>
+                                    <constraint firstItem="Ns8-8s-I3w" firstAttribute="leading" secondItem="IXb-SO-eaO" secondAttribute="leading" constant="32" id="bQi-fL-qWb"/>
+                                    <constraint firstItem="Ns8-8s-I3w" firstAttribute="top" secondItem="hRf-JN-57U" secondAttribute="bottom" constant="13" id="hIF-Vh-j0T"/>
+                                    <constraint firstItem="Ns8-8s-I3w" firstAttribute="leading" secondItem="hRf-JN-57U" secondAttribute="leading" id="lj9-WW-Gje"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vIB-U8-ojE"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IXb-SO-eaO" firstAttribute="leading" secondItem="JOY-7h-ZG6" secondAttribute="leading" id="g55-bb-cHz"/>
+                            <constraint firstItem="IXb-SO-eaO" firstAttribute="top" secondItem="JOY-7h-ZG6" secondAttribute="top" id="hEE-Y5-xgE"/>
+                            <constraint firstItem="vIB-U8-ojE" firstAttribute="bottom" secondItem="IXb-SO-eaO" secondAttribute="bottom" constant="605" id="t5o-1D-dSJ"/>
+                            <constraint firstAttribute="trailing" secondItem="IXb-SO-eaO" secondAttribute="trailing" id="vTy-8X-mLC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="나의 증명서" image="scribble.variable" catalog="system" id="NLD-vE-MXB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9b-wP-tyP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1360" y="-175"/>
+            <point key="canvasLocation" x="-1361.0687022900763" y="-175.35211267605635"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="pwD-tp-H5k">
@@ -74,16 +115,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyF-oA-HO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-850" y="-963"/>
+            <point key="canvasLocation" x="-518" y="-975"/>
         </scene>
     </scenes>
     <resources>
         <image name="scribble.variable" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

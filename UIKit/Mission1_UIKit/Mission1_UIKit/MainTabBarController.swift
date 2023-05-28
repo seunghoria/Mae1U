@@ -17,6 +17,5 @@ class MainTabBarController: UITabBarController {
             UITabBar.clearShadow()
             tabBar.layer.applyShadow(color: .black, alpha: 0.1, x: 0, y: -1, blur: 4)
     }
-
 }
 

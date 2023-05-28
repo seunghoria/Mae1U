@@ -14,6 +14,7 @@
 		29E6E1772A22030300B8A35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E6E1762A22030300B8A35A /* Assets.xcassets */; };
 		29E6E17A2A22030300B8A35A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E6E1782A22030300B8A35A /* LaunchScreen.storyboard */; };
 		29E6E1832A2376A500B8A35A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6E1822A2376A500B8A35A /* Extensions.swift */; };
+		29E6E1852A2381BF00B8A35A /* MyCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6E1842A2381BF00B8A35A /* MyCertificate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		29E6E17B2A22030300B8A35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29E6E1812A2345D200B8A35A /*  Requirements.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = " Requirements.md"; sourceTree = "<group>"; };
 		29E6E1822A2376A500B8A35A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		29E6E1842A2381BF00B8A35A /* MyCertificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCertificate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				29E6E1812A2345D200B8A35A /*  Requirements.md */,
 				29E6E16F2A22030200B8A35A /* SceneDelegate.swift */,
 				29E6E1712A22030200B8A35A /* MainTabBarController.swift */,
+				29E6E1842A2381BF00B8A35A /* MyCertificate.swift */,
 				29E6E1822A2376A500B8A35A /* Extensions.swift */,
 				29E6E1732A22030200B8A35A /* Main.storyboard */,
 				29E6E1762A22030300B8A35A /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E6E1722A22030200B8A35A /* MainTabBarController.swift in Sources */,
+				29E6E1852A2381BF00B8A35A /* MyCertificate.swift in Sources */,
 				29E6E16E2A22030200B8A35A /* AppDelegate.swift in Sources */,
 				29E6E1702A22030200B8A35A /* SceneDelegate.swift in Sources */,
 				29E6E1832A2376A500B8A35A /* Extensions.swift in Sources */,
@@ -300,6 +304,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +332,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
