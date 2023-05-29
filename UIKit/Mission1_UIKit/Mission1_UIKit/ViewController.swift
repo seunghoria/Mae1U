@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cardMain.layer.cornerRadius = 16
+        certificationButton.layer.cornerRadius = 12
     }
     
     
