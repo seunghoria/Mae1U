@@ -139,6 +139,8 @@
                     <connections>
                         <outlet property="cardMain" destination="5XK-ij-xZu" id="br9-t3-Viz"/>
                         <outlet property="cardTitle" destination="6OX-FF-TvI" id="nEn-oy-Exb"/>
+                        <outlet property="certificationButton" destination="V8G-30-mse" id="ug6-Zk-wVc"/>
+                        <outlet property="navigationButton" destination="Ns8-8s-I3w" id="xpa-3r-JoV"/>
                         <outlet property="navigationLabel" destination="hRf-JN-57U" id="Mzo-e9-BqO"/>
                     </connections>
                 </viewController>
