@@ -137,6 +137,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="나의 증명서" image="scribble.variable" catalog="system" id="NLD-vE-MXB"/>
                     <connections>
+                        <outlet property="cardMain" destination="5XK-ij-xZu" id="br9-t3-Viz"/>
+                        <outlet property="cardTitle" destination="6OX-FF-TvI" id="nEn-oy-Exb"/>
                         <outlet property="navigationLabel" destination="hRf-JN-57U" id="Mzo-e9-BqO"/>
                     </connections>
                 </viewController>
