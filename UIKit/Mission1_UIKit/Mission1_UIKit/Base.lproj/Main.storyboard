@@ -45,7 +45,7 @@
         <!--나의 증명서-->
         <scene sceneID="e8D-kw-hJA">
             <objects>
-                <viewController id="EXg-Xi-hfA" sceneMemberID="viewController">
+                <viewController id="EXg-Xi-hfA" customClass="ViewController" customModule="Mission1_UIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JOY-7h-ZG6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,14 +97,15 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8G-30-mse">
                                                 <rect key="frame" x="37" y="35" width="197" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="본인인증 하기">
-                                                    <backgroundConfiguration key="background" cornerRadius="12">
-                                                        <color key="backgroundColor" red="0.0" green="0.21176470588235294" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </buttonConfiguration>
+                                                <color key="backgroundColor" red="0.0" green="0.21176470589999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="본인인증 하기">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="certificationButtonPressed:" destination="EXg-Xi-hfA" eventType="touchUpInside" id="tzD-JB-41J"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -135,6 +136,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="나의 증명서" image="scribble.variable" catalog="system" id="NLD-vE-MXB"/>
+                    <connections>
+                        <outlet property="navigationLabel" destination="hRf-JN-57U" id="Mzo-e9-BqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9b-wP-tyP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
