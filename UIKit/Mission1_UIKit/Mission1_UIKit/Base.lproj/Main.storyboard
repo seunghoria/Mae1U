@@ -87,6 +87,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인인증 증명서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OX-FF-TvI">
                                         <rect key="frame" x="17" y="254" width="176" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="176" id="FcS-dB-PG3"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -139,6 +142,7 @@
                     <connections>
                         <outlet property="cardMain" destination="5XK-ij-xZu" id="br9-t3-Viz"/>
                         <outlet property="cardTitle" destination="6OX-FF-TvI" id="nEn-oy-Exb"/>
+                        <outlet property="cardWhiteBox" destination="RT3-aQ-HrG" id="2BM-1b-Gzu"/>
                         <outlet property="certificationButton" destination="V8G-30-mse" id="ug6-Zk-wVc"/>
                         <outlet property="navigationButton" destination="Ns8-8s-I3w" id="xpa-3r-JoV"/>
                         <outlet property="navigationLabel" destination="hRf-JN-57U" id="Mzo-e9-BqO"/>

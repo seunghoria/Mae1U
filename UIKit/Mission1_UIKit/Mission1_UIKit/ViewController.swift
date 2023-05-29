@@ -16,12 +16,21 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cardMain: UIView!
     @IBOutlet weak var cardTitle: UILabel!
+    @IBOutlet weak var cardWhiteBox: UIView!
     @IBOutlet weak var certificationButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         cardMain.layer.cornerRadius = 16
+        cardMain.layer.shadowColor = UIColor.black.cgColor  // 그림자의 색상
+        cardMain.layer.shadowOffset = CGSize(width: 1, height: 1)  // 그림자의 위치(offset)
+        cardMain.layer.shadowOpacity = 0.12  // 그림자의 투명도
+        cardMain.layer.shadowRadius = 12  // 그림자의 반지름 크기
+        
+        
+        cardWhiteBox.layer.cornerRadius = 16
+        
         certificationButton.layer.cornerRadius = 12
     }
     
