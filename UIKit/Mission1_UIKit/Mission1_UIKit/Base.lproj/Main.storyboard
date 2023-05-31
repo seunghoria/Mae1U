@@ -87,7 +87,7 @@
                                 <rect key="frame" x="61" y="235" width="271" height="463"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인인증 증명서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OX-FF-TvI">
-                                        <rect key="frame" x="17" y="229" width="237" height="33.666666666666686"/>
+                                        <rect key="frame" x="17" y="263" width="237" height="33.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -95,6 +95,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RT3-aQ-HrG">
                                         <rect key="frame" x="0.0" y="350" width="271" height="117"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBF-A3-7lf">
+                                                <rect key="frame" x="0.0" y="0.0" width="271" height="101"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8G-30-mse">
                                                 <rect key="frame" x="37" y="35" width="197" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -157,9 +162,11 @@
                                             <constraint firstAttribute="bottom" secondItem="sph-Wh-vkR" secondAttribute="bottom" constant="24" id="x0t-8G-K2g"/>
                                         </constraints>
                                     </view>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="코로나19 예방접종 증명서" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP6-qf-VIT">
-                                        <rect key="frame" x="17" y="189" width="234" height="84"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코로나19 예방접종 증명서" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP6-qf-VIT">
+                                        <rect key="frame" x="20" y="229" width="176" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="176" id="oZy-8J-S4n"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -170,10 +177,13 @@
                                     <constraint firstAttribute="trailing" secondItem="RT3-aQ-HrG" secondAttribute="trailing" id="1rh-HP-NCd"/>
                                     <constraint firstItem="RT3-aQ-HrG" firstAttribute="top" secondItem="5XK-ij-xZu" secondAttribute="top" constant="350" id="7Gn-38-NyU"/>
                                     <constraint firstAttribute="trailing" secondItem="6OX-FF-TvI" secondAttribute="trailing" constant="17" id="8Wo-c1-KxI"/>
+                                    <constraint firstItem="TP6-qf-VIT" firstAttribute="leading" secondItem="5XK-ij-xZu" secondAttribute="leading" constant="20" id="9FW-G1-S7F"/>
+                                    <constraint firstItem="6OX-FF-TvI" firstAttribute="top" secondItem="5XK-ij-xZu" secondAttribute="top" constant="263" id="B8r-Jx-gtH"/>
                                     <constraint firstItem="RT3-aQ-HrG" firstAttribute="leading" secondItem="5XK-ij-xZu" secondAttribute="leading" id="CJu-D6-1SL"/>
+                                    <constraint firstItem="TP6-qf-VIT" firstAttribute="leading" secondItem="5XK-ij-xZu" secondAttribute="leading" constant="20" id="WID-cq-dCP"/>
                                     <constraint firstAttribute="bottom" secondItem="RT3-aQ-HrG" secondAttribute="bottom" constant="-4" id="bJu-Es-9ha"/>
                                     <constraint firstItem="6OX-FF-TvI" firstAttribute="leading" secondItem="5XK-ij-xZu" secondAttribute="leading" constant="17" id="fhy-iH-9Gf"/>
-                                    <constraint firstItem="6OX-FF-TvI" firstAttribute="top" secondItem="5XK-ij-xZu" secondAttribute="top" constant="229" id="soe-my-mEf"/>
+                                    <constraint firstItem="TP6-qf-VIT" firstAttribute="top" secondItem="5XK-ij-xZu" secondAttribute="top" constant="229" id="pTx-eL-rt6"/>
                                 </constraints>
                             </view>
                         </subviews>

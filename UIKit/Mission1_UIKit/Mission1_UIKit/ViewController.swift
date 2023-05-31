@@ -42,8 +42,10 @@ class ViewController: UIViewController {
     @IBAction func certificationButtonPressed(_ sender: UIButton) {
         
         navigationLabel.text = "코로나19 예방접종 내역"
+        navigationButton.layer.borderWidth = 0 
         navigationButton.layer.cornerRadius = 13.5
         navigationButton.backgroundColor = #colorLiteral(red: 0.1215686275, green: 0.3529411765, blue: 1, alpha: 1)
+
         
         cardMain.backgroundColor = #colorLiteral(red: 0.09803921569, green: 0.2862745098, blue: 0.7019607843, alpha: 1)
         
